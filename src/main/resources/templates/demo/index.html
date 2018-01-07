@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head"></head>
+<body>
+<header th:replace="fragments/header-menu :: menu"></header>
+<main role="main" class="container">
+    <div class="row">
+        <!--/*@thymesVar id="name" type="String"*/-->
+        <h1 th:text="'Hello,  ' + ${name} + ' !'"></h1>
+        <p> It's Demo page for test Thymeleaf !</p>
+    </div>
+</main>
+</body>
+</html>
